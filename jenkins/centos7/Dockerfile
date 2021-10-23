@@ -16,6 +16,7 @@ RUN ssh-keygen -A
 
 RUN yum -y install mysql
 
+# install awscli
 RUN yum -y install epel-release && \
     yum -y install python3-pip && \
     pip3 install --upgrade pip && \
